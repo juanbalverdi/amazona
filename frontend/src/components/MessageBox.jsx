@@ -7,5 +7,5 @@ export const MessageBox = (props) => {
 
 MessageBox.propTypes = {
   variant: PropTypes.string,
-  children: PropTypes.string,
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
 };
